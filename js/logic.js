@@ -10,3 +10,19 @@ Hints for the first problem:
 NOTE: you can use a `for` loop to make this happen.
 
 */
+
+var sum = function(options){
+  total = 0;
+  for (var i = 0; i < options.length; i++) {
+    total += Number(options[i].value);
+    // console.log(options[i]);
+  };
+  console.log(total);
+  return total;
+};
+
+
+
+// var total = options.reduce(function(c,e){
+//   return c + e.value
+// })
