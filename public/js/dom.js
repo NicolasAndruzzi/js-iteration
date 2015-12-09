@@ -44,13 +44,13 @@ countSelected.addEventListener("click", function(){
 });
 
 /////////////////////////////////////////////////////////////////////////////////////
-//
-// sumAll.addEventListener("click", function(){
-//   // console.log(selectorOptions.options);
-//   resultsField.innerHTML = "Sum of all numbers = $" + sum(selectorOptions.options).toFixed(2);
-// });
-//
-// /////////////////////////////////////////////////////////////////////////////////////
+
+sumSelected.addEventListener("click", function(){
+  // console.log(selectorOptions.options);
+  resultsField.innerHTML = "Sum of all selected numbers = $" + getSelectedSum(selectorOptions);
+});
+
+/////////////////////////////////////////////////////////////////////////////////////
 //
 // sumAll.addEventListener("click", function(){
 //   // console.log(selectorOptions.options);

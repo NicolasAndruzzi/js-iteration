@@ -36,6 +36,15 @@ var getCount = function(options){
   return count;
 };
 
+var getSelectedSum = function(options){
+  var total = 0;
+  for (var i = 0; i < options.length; i++) {
+    if (options[i].selected) {
+      total += parseInt(options[i].value)
+    }
+  }
+  return total.toFixed(2);
+}
 
 
 // var total = options.reduce(function(c,e){
