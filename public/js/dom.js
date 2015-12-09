@@ -26,14 +26,12 @@ var resultsField = document.getElementById("results");
 /////////////////////////////////////////////////////////////////////////////////////
 
 sumAll.addEventListener("click", function(){
-  // console.log(selectorOptions.options);
   resultsField.innerHTML = "Sum of all numbers = $" + sum(selectorOptions).toFixed(2);
 });
 
 /////////////////////////////////////////////////////////////////////////////////////
 
 averageAll.addEventListener("click", function(){
-  // console.log(selectorOptions.options);
   resultsField.innerHTML = "Average of all numbers = $" + average(selectorOptions);
 });
 
@@ -46,15 +44,13 @@ countSelected.addEventListener("click", function(){
 /////////////////////////////////////////////////////////////////////////////////////
 
 sumSelected.addEventListener("click", function(){
-  // console.log(selectorOptions.options);
   resultsField.innerHTML = "Sum of all selected numbers = $" + getSelectedSum(selectorOptions);
 });
 
 /////////////////////////////////////////////////////////////////////////////////////
-//
-// sumAll.addEventListener("click", function(){
-//   // console.log(selectorOptions.options);
-//   resultsField.innerHTML = "Sum of all numbers = $" + sum(selectorOptions.options).toFixed(2);
-// });
-//
-// /////////////////////////////////////////////////////////////////////////////////////
+
+averageSelected.addEventListener("click", function(){
+  resultsField.innerHTML = "Average of all selected numbers = $" + averageOfSelected(selectorOptions);
+});
+
+/////////////////////////////////////////////////////////////////////////////////////

@@ -40,12 +40,21 @@ var getSelectedSum = function(options){
   var total = 0;
   for (var i = 0; i < options.length; i++) {
     if (options[i].selected) {
-      total += parseInt(options[i].value)
-    }
-  }
+      total += parseInt(options[i].value);
+    };
+  };
   return total.toFixed(2);
-}
+};
 
+var averageOfSelected = function(options){
+  var average = getSelectedSum(options) / getCount(options);
+  if (getCount(options) === 0) {
+    return 0;
+  }
+  else {
+    return average.toFixed(2);
+  }
+};
 
 // var total = options.reduce(function(c,e){
 //   return c + e.value
