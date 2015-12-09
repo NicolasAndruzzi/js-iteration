@@ -27,7 +27,7 @@ var resultsField = document.getElementById("results");
 
 sumAll.addEventListener("click", function(){
   // console.log(selectorOptions.options);
-  resultsField.innerHTML = "Sum of all numbers = $" + sum(selectorOptions.options);
+  resultsField.innerHTML = "Sum of all numbers = $" + sum(selectorOptions.options).toFixed(2);
 });
 
 /////////////////////////////////////////////////////////////////////////////////////

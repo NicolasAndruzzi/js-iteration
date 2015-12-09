@@ -14,7 +14,7 @@ NOTE: you can use a `for` loop to make this happen.
 var sum = function(options){
   total = 0;
   for (var i = 0; i < options.length; i++) {
-    total += Number(options[i].value);
+    total += parseInt(options[i].value);
     // console.log(options[i]);
   };
   console.log(total);
