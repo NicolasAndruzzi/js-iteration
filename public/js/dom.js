@@ -32,6 +32,30 @@ sumAll.addEventListener("click", function(){
 
 /////////////////////////////////////////////////////////////////////////////////////
 
-countSelected.addEventListener("click", function(){
-  console.log(selectorOptions.options.selected);
-})
+averageAll.addEventListener("click", function(){
+  // console.log(selectorOptions.options);
+  resultsField.innerHTML = "Average of all numbers = $" + average(selectorOptions.options);
+});
+
+// /////////////////////////////////////////////////////////////////////////////////////
+//
+// sumAll.addEventListener("click", function(){
+//   // console.log(selectorOptions.options);
+//   resultsField.innerHTML = "Sum of all numbers = $" + sum(selectorOptions.options).toFixed(2);
+// });
+//
+// /////////////////////////////////////////////////////////////////////////////////////
+//
+// sumAll.addEventListener("click", function(){
+//   // console.log(selectorOptions.options);
+//   resultsField.innerHTML = "Sum of all numbers = $" + sum(selectorOptions.options).toFixed(2);
+// });
+//
+// /////////////////////////////////////////////////////////////////////////////////////
+//
+// sumAll.addEventListener("click", function(){
+//   // console.log(selectorOptions.options);
+//   resultsField.innerHTML = "Sum of all numbers = $" + sum(selectorOptions.options).toFixed(2);
+// });
+//
+// /////////////////////////////////////////////////////////////////////////////////////

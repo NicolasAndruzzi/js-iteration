@@ -21,6 +21,11 @@ var sum = function(options){
   return total;
 };
 
+var average = function(prices){
+  var average = sum(prices) / prices.length;
+  return average.toFixed(2);
+};
+
 
 
 // var total = options.reduce(function(c,e){
