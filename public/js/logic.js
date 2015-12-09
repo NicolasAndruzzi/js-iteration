@@ -21,9 +21,19 @@ var sum = function(options){
   return total;
 };
 
-var average = function(prices){
-  var average = sum(prices) / prices.length;
+var average = function(options){
+  var average = sum(options) / options.length;
   return average.toFixed(2);
+};
+
+var getCount = function(options){
+  var count = 0;
+  for (var i = 0; i < options.length; i++) {
+    if (options[i].selected) {
+      count++;
+    }
+  }
+  return count;
 };
 
 

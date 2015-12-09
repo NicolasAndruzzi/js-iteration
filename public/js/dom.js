@@ -20,31 +20,30 @@ var averageAll = document.getElementById("average-all");
 var averageSelected = document.getElementById("average-selected");
 
 //Select list:
-var selectorOptions = document.getElementById("selector");
+var selectorOptions = document.getElementById("selector").options;
 var resultsField = document.getElementById("results");
 
 /////////////////////////////////////////////////////////////////////////////////////
 
 sumAll.addEventListener("click", function(){
   // console.log(selectorOptions.options);
-  resultsField.innerHTML = "Sum of all numbers = $" + sum(selectorOptions.options).toFixed(2);
+  resultsField.innerHTML = "Sum of all numbers = $" + sum(selectorOptions).toFixed(2);
 });
 
 /////////////////////////////////////////////////////////////////////////////////////
 
 averageAll.addEventListener("click", function(){
   // console.log(selectorOptions.options);
-  resultsField.innerHTML = "Average of all numbers = $" + average(selectorOptions.options);
+  resultsField.innerHTML = "Average of all numbers = $" + average(selectorOptions);
 });
 
-// /////////////////////////////////////////////////////////////////////////////////////
-//
-// sumAll.addEventListener("click", function(){
-//   // console.log(selectorOptions.options);
-//   resultsField.innerHTML = "Sum of all numbers = $" + sum(selectorOptions.options).toFixed(2);
-// });
-//
-// /////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////
+
+countSelected.addEventListener("click", function(){
+  resultsField.innerHTML = "Number of selections is:" + getCount(selectorOptions);
+});
+
+/////////////////////////////////////////////////////////////////////////////////////
 //
 // sumAll.addEventListener("click", function(){
 //   // console.log(selectorOptions.options);
